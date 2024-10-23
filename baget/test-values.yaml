@@ -47,7 +47,7 @@ database:
   # SQL Server: SqlServer
   # PostgreSQL: PostgreSql
   # Azure Table Storage: AzureTable
-  type: Sqlite
+  type: SqlServer
   # Expected secret data:
   # ```
   # data:
@@ -57,7 +57,7 @@ database:
   #   name: baget-db-secret
   #   secretName: baget-db-secret
   # ```
-  secretName: "test"
+  secretName: "baget-db-secret"
 
 serviceAccount:
   # Specifies whether a service account should be created
