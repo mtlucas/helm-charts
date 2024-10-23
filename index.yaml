@@ -16,6 +16,6 @@ entries:
     - https://github.com/loic-sharma/BaGet
     - https://hub.docker.com/r/loicsharma/baget
     urls:
-    - https://mtlucas.github.io/helm-charts/baget/baget-1.0.6.tgz
+    - https://github.com/mtlucas/helm-charts/blob/gh-pages/baget/baget-1.0.6.tgz
     version: 1.0.6
 generated: "2024-10-23T14:34:52.4683062-05:00"
