@@ -22,6 +22,6 @@
 *.tmproj
 .vscode/
 
-myvalues.yaml
+test-values.yaml
 *.tgz
 index.yaml

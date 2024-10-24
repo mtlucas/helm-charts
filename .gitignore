@@ -31,7 +31,7 @@ bin/*
 Session.vim
 .netrwhist
 
-# Chart artifacts
-*.tgz
+# Chart dependencies
+**/charts/*.tgz
 
 .history
