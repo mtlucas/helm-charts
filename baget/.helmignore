@@ -27,3 +27,4 @@ myvalues.yaml
 index.yaml
 
 docs/*
+*/docs*

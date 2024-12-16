@@ -39,7 +39,6 @@ spec:
           volumeMounts:
             - name: dynamodb-local-data
               mountPath: /home/dynamodblocal/data
-          imagePullPolicy: Always
       securityContext:
         fsGroup: 1000
       volumes:
