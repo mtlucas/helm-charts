@@ -21,9 +21,9 @@ entries:
   dynamodb-local-chart:
   - apiVersion: v2
     appVersion: 2.5.3
-    created: "2024-12-16T12:01:54.3195173-06:00"
+    created: "2024-12-16T15:11:40.1426963-06:00"
     description: A DynamoDB Local Helm chart for Kubernetes
-    digest: 2a99e9bd0bf16a46e7f77d72d6a247a297551522c5d59bba86af2b5e375b8983
+    digest: 63ff9f441ad2a29c2be788d09b69c9e8c3de99ec9fdc853fddfbf0b22ad55458
     icon: https://upload.wikimedia.org/wikipedia/commons/f/fd/DynamoDB.png
     maintainers:
     - email: mike@lucasnet.org
@@ -33,6 +33,6 @@ entries:
     - https://github.com/jittakal/dynamodb-local-helm-chart
     type: application
     urls:
-    - https://raw.githubusercontent.com/mtlucas/helm-charts/gh-pages/dynamodb-local/dynamodb-local-chart-0.1.0.tgz
-    version: 0.1.0
-generated: "2024-12-16T12:01:54.3077429-06:00"
+    - https://raw.githubusercontent.com/mtlucas/helm-charts/gh-pages/dynamodb-local/dynamodb-local-chart-0.1.1.tgz
+    version: 0.1.1
+generated: "2024-12-16T15:11:40.1328373-06:00"
