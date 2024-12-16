@@ -18,4 +18,21 @@ entries:
     urls:
     - https://raw.githubusercontent.com/mtlucas/helm-charts/gh-pages/baget/baget-1.0.6.tgz
     version: 1.0.6
-generated: "2024-10-23T14:34:52.4683062-05:00"
+  dynamodb-local-chart:
+  - apiVersion: v2
+    appVersion: 2.5.3
+    created: "2024-12-16T12:01:54.3195173-06:00"
+    description: A DynamoDB Local Helm chart for Kubernetes
+    digest: 2a99e9bd0bf16a46e7f77d72d6a247a297551522c5d59bba86af2b5e375b8983
+    icon: https://upload.wikimedia.org/wikipedia/commons/f/fd/DynamoDB.png
+    maintainers:
+    - email: mike@lucasnet.org
+      name: Lucasnet
+    name: dynamodb-local-chart
+    sources:
+    - https://github.com/jittakal/dynamodb-local-helm-chart
+    type: application
+    urls:
+    - https://mtlucas.github.io/helm-charts/dynamodb-local/dynamodb-local-chart-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-12-16T12:01:54.3077429-06:00"
