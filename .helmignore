@@ -25,3 +25,5 @@
 myvalues.yaml
 *.tgz
 index.yaml
+
+docs/*

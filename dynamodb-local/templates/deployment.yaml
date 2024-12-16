@@ -1,0 +1,48 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-dynamodb-local
+  labels:
+    app: {{ .Release.Name }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/name: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: Helm
+    helm.sh/chart: {{ .Chart.Name }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:  # This selector should match the labels in the template
+    matchLabels:
+      app: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}
+    spec:
+      containers:
+        - name: dynamodb-local
+          image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          command:
+            - java
+          args: [ "-Djava.library.path=./DynamoDBLocal_lib", "-jar", "DynamoDBLocal.jar", "-optimizeDbBeforeStartup", "-dbPath", "/home/dynamodblocal/data", "-sharedDb"]
+          ports:
+            - containerPort: 8000
+              protocol: TCP
+          env:
+            - name: AWS_ACCESS_KEY_ID
+              value: local
+            - name: AWS_SECRET_ACCESS_KEY
+              value: local
+            - name: AWS_REGION
+              value: localhost
+          volumeMounts:
+            - name: dynamodb-local-data
+              mountPath: /home/dynamodblocal/data
+          imagePullPolicy: Always
+      securityContext:
+        fsGroup: 1000
+      volumes:
+        - name: dynamodb-local-data
+          persistentVolumeClaim:
+            claimName: {{ .Release.Name }}-dynamodb-local-data
