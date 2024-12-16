@@ -33,6 +33,6 @@ entries:
     - https://github.com/jittakal/dynamodb-local-helm-chart
     type: application
     urls:
-    - https://mtlucas.github.io/helm-charts/dynamodb-local/dynamodb-local-chart-0.1.0.tgz
+    - https://raw.githubusercontent.com/mtlucas/helm-charts/gh-pages/dynamodb-local/dynamodb-local-chart-0.1.0.tgz
     version: 0.1.0
 generated: "2024-12-16T12:01:54.3077429-06:00"
