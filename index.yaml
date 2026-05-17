@@ -35,4 +35,38 @@ entries:
     urls:
     - https://raw.githubusercontent.com/mtlucas/helm-charts/gh-pages/dynamodb-local/dynamodb-local-chart-0.1.1.tgz
     version: 0.1.1
-generated: "2024-12-16T15:11:40.1328373-06:00"
+  searxng:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2026-05-17T09:42:22.4031996-05:00"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.4.2
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.pascaliske.dev
+      version: 0.0.3
+    description: SearXNG is a free internet metasearch engine which aggregates results
+      from various search services and databases.
+    digest: 69a9f79fbecbdd8565ae5fb0f4e330777dfedd412c10c19405d7b662bddbe838
+    icon: https://github.com/searxng/searxng/blob/master/searx/static/themes/simple/img/favicon.png?raw=true
+    keywords:
+    - searx
+    - searxng
+    - search engine
+    - privacy
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: searxng@unixfoxremovemeifyouwanttocontactme.eu
+      name: unixfox
+    name: searxng
+    sources:
+    - https://github.com/searxng/searxng
+    - https://docs.searxng.org
+    - https://hub.docker.com/r/searxng/searxng
+    urls:
+    - https://raw.githubusercontent.com/mtlucas/helm-charts/gh-pages/searxng/searxng-1.0.1.tgz
+    version: 1.0.1
+generated: "2026-05-17T09:42:22.3963611-05:00"
+
